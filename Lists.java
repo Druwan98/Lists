@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 
-public class cityClass {
+public class Lists {
     public static void main(String[] args) {
         String[] cityNames = {"Milano", "Bari", "Napoli"};
         List<String> array = new ArrayList<>(Arrays.asList(cityNames));
