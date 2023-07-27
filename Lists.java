@@ -4,13 +4,12 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-
 public class Lists {
     public static void main(String[] args) {
-        String[] cityNames = {"Milano", "Bari", "Napoli"};
-        List<String> array = new ArrayList<>(Arrays.asList(cityNames));
-        array.set(1, "Tegucigalpa");
-        System.out.println(array);
+        List<String> cityNames = Arrays.asList("Milano", "Bari", "Napoli") ;
+
+        cityNames.set(1, "Tegucigalpa");
+        System.out.println(cityNames);
 
         List<String> kingsOfRome = new ArrayList<>();
         kingsOfRome.add("Romolo");
@@ -25,16 +24,5 @@ public class Lists {
         String[] kingsOfRomeArray = kingsOfRome.toArray(new String[0]);
         kingsOfRomeArray[6] = "Lucius Tarquinius Supercar";
         System.out.println(Arrays.toString(kingsOfRomeArray));
-
-
-
-
-
-
-
-
-
     }
-
-
 }
